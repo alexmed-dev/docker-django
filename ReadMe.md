@@ -7,9 +7,9 @@
 
 Для скачивания образов и запуска контейнеров на их основе следует использовать конфигурационный файл docker-compose.yml.
 
-   Ссылка на скачивание: https://drive.google.com/drive/folders/17m1IWkm9KRigb7qZJBdSLK8foVMCLcGx?usp=sharing
-   Ссылка на github.com: https://github.com/alexmed-dev/docker-django-prod/blob/main/docker-compose.yml
-   Команда для запуска: docker-compose up -d
+- Ссылка на github.com: https://github.com/alexmed-dev/docker-django-prod/blob/main/docker-compose.yml
+- Ссылка на скачивание: https://drive.google.com/file/d/1T02q0V1UEoSW14yZ9vykAYHvA3MMz324/view?usp=drive_link
+- Команда для запуска: docker-compose up -d
 
 Можно зайти в панель администратора Django: http://localhost:8000/admin
    - логин: `admin`
@@ -38,8 +38,8 @@
 
 Для работы с проектом необходимо:
 1. Загрузить конфигурационный файл docker-compose.yml.
-   - ссылка на скачивание: https://drive.google.com/drive/folders/17m1IWkm9KRigb7qZJBdSLK8foVMCLcGx?usp=sharing
    - ссылка на github.com: https://github.com/alexmed-dev/docker-django-prod/blob/main/docker-compose.yml
+   - ссылка на скачивание: https://drive.google.com/file/d/1T02q0V1UEoSW14yZ9vykAYHvA3MMz324/view?usp=drive_link
 2. Поместить его в удобный для работы каталог.
 3. В терминале перейти в каталог и запустить команду: `docker-compose up -d`
    Можно зайти в панель администратора Django: http://localhost:8000/admin
@@ -59,8 +59,4 @@
 
    Параметры из конфигурационного файла docker-compose.yml используются для создания пользователя в новой БД и для авторизации в админке по адресу http://localhost:8000/admin/
    только при `NEWDB=1` (при `NEWDB=0` игнорируется и использутся ранее примененные).
-
-
-
-
 
