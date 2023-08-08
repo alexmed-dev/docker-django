@@ -3,7 +3,7 @@
 Проект построен с использованием Docker Compose.
 Собраны и работают серверы Linux, nginx, Django, Postgres, Gunicorn.
 Собранные образы загружены на hub.docker.com.
-Ссылка на исходный проект на github.com:
+Ссылка на исходный проект на github.com: https://github.com/alexmed-dev/docker-django
 
 Для скачивания образов и запуска контейнеров на их основе следует использовать конфигурационный файл docker-compose.yml.
 
