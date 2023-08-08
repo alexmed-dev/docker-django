@@ -8,8 +8,8 @@
 Для скачивания образов и запуска контейнеров на их основе следует использовать конфигурационный файл docker-compose.yml.
 
 - Ссылка на github.com: https://github.com/alexmed-dev/docker-django-prod/blob/main/docker-compose.yml
-- Ссылка на скачивание: https://drive.google.com/file/d/1T02q0V1UEoSW14yZ9vykAYHvA3MMz324/view?usp=drive_link
-- Команда для запуска: docker-compose up -d
+- Или ссылка на скачивание: https://drive.google.com/file/d/1T02q0V1UEoSW14yZ9vykAYHvA3MMz324/view?usp=drive_link
+- Команда для запуска: `docker-compose up -d`
 
 Можно зайти в панель администратора Django: http://localhost:8000/admin
    - логин: `admin`
@@ -23,8 +23,8 @@
 При первом запуске с hub.docker.com загрузятся необходимые образы и запустятся три контейнера.
 
 При запуске будет создано два тома:
-- Для БД PostgreSQL (можно сохранять изменения после выключения контейнера при настройке окружения NEWDB=0)
-- Для статических файлов (изменения будут отображены в брузере по адресу http://localhost:8000/static/)
+- Для БД PostgreSQL (можно сохранять изменения после выключения контейнера при настройке окружения NEWDB=0 - описано ниже)
+- Для статических файлов (можно внести изменения будут отображены в браузере по адресам http://localhost:8000/static/)
 
 В БД будет выполнена миграция.
 
@@ -36,6 +36,8 @@
 
 ## Работа с готовым проектом
 
+### Основное
+
 Для работы с проектом необходимо:
 1. Загрузить конфигурационный файл docker-compose.yml.
    - ссылка на github.com: https://github.com/alexmed-dev/docker-django-prod/blob/main/docker-compose.yml
@@ -46,6 +48,8 @@
    - логин: `admin`
    - пароль: `secret`
    Доступна статическая страница: http://localhost:8000/static/index.html
+
+### Дополнительно
 
  При необходимости можно изменить параметры:
    - `DJANGO_SUPERUSER_USERNAME` - логин администратора Django;
